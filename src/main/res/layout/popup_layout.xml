@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/popup_element"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#444444"
+    android:padding="10px"
+    android:orientation="vertical">
+
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal|bottom">
+
+        <Button
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/save_button"
+            android:drawablePadding="3sp"
+            android:layout_centerHorizontal="true"
+            android:onClick="saveNote"
+            android:text="Remove" />
+
+
+        <Button
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/end_data_send_button"
+            android:drawablePadding="3sp"
+            android:layout_centerHorizontal="true"
+            android:onClick="cancelPopup"
+            android:text="Change" />
+
+    </LinearLayout>
+</LinearLayout>

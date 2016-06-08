@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Notepad</string>
+    <string name="note_hint">Write your note here!</string>
+    <string name="save_text">Save</string>
+    <string name="open_text">Opens a file</string>
+    <string name="list_notes">List</string>
+</resources>

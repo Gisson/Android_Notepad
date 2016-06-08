@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="company.gisson.notepad.MainActivity"
+    android:id="@+id/main_activity">
+
+    <EditText
+        android:id="@+id/note_text"
+        android:hint="@string/note_hint"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:imeOptions="actionDone"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:text="@string/save_text"
+        android:onClick="saveNote"
+        android:id="@+id/button_save" />
+
+    <!--<Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="78dp"
+        android:text="@string/open_text"
+        android:onClick="openNote"
+        android:id="@+id/button" />-->
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/list_notes"
+        android:onClick="listNotes"
+        android:id="@+id/button_list"
+        android:layout_below="@+id/button_save"
+        android:layout_toLeftOf="@+id/button_save"
+        android:layout_toStartOf="@+id/button_save"
+        android:layout_marginRight="81dp"
+        android:layout_marginEnd="81dp" />
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/note_list"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/colorPrimaryDark"
+        android:layout_alignRight="@+id/note_text"
+        android:layout_alignEnd="@+id/note_text"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/button_list">
+
+    </ListView>
+</RelativeLayout>
